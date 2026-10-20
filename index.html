@@ -13,7 +13,7 @@
     Jekyll theme used by https://lroethan.github.io/ (MIT-licensed theme).
     Standalone theme-matched CSS is embedded below so this HTML works offline.
     No dependency on the reference website is required.
-    Replace the HT monogram in the author__avatar with a personal portrait if desired.
+    To show your portrait, place profile.jpg next to index.html.
   -->
 <style>
     /* Standalone styling based on the reference's AcademicPages theme. */
@@ -49,7 +49,7 @@
     .sidebar h2,.sidebar h3,.sidebar h4{margin-bottom:0;font-family:"Trebuchet MS",Helvetica,sans-serif}
     .sidebar p,.sidebar li{font-family:"Trebuchet MS",Helvetica,sans-serif;font-size:.75em;line-height:1.5}
     .author__avatar{display:block;width:auto;max-width:175px;height:auto}
-    .author__avatar img{width:100%;max-width:175px;border-radius:50%;padding:5px;border:1px solid var(--global-border-color)}
+    .author__avatar img{display:block;width:100%;max-width:175px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;padding:5px;border:1px solid var(--global-border-color)}
     .portrait-placeholder{display:grid;place-items:center;width:175px;height:175px;max-width:100%;border-radius:50%;border:1px solid var(--global-border-color);background:#e6ebed;color:#798990;box-shadow:inset 0 0 0 5px #fff;font:700 42px "Trebuchet MS",Helvetica,sans-serif;letter-spacing:-.03em}
     .author__content{display:block;width:100%;line-height:1;padding:0}
     .sidebar .author__name{font-size:1em;margin:10px 0;font-weight:700}
@@ -132,9 +132,9 @@
 <div id="main" role="main">
 <div aria-label="Profile sidebar" class="sidebar sticky">
 <div itemscope="" itemtype="https://schema.org/Person">
-<div aria-label="Avatar placeholder: add your portrait here" class="author__avatar">
-<!-- To use your portrait: replace the div below with <img src="portrait.jpg" alt="Haibo Tang"> -->
-<div aria-hidden="true" class="portrait-placeholder">HT</div>
+<div class="author__avatar" aria-label="Haibo Tang portrait">
+<img src="profile.jpg" alt="Haibo Tang" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"/>
+<div aria-hidden="true" class="portrait-placeholder" style="display:none;">HT</div>
 </div>
 <div class="author__content">
 <h3 class="author__name">Haibo Tang</h3>
@@ -156,7 +156,7 @@
 <header><h1 class="page__title">About Me</h1></header>
 <section aria-label="Biography and academic record" class="page__content">
 <p>I am currently a postdoctoral researcher at the <a href="https://www.zju.edu.cn/english/" rel="noopener noreferrer" target="_blank">State Key Laboratory of Blockchain and Data Security, Zhejiang University</a>, and the Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security in Hangzhou, China.</p>
-<p>I received my Ph.D. in Data Science and Engineering from <a href="https://english.ecnu.edu.cn/" rel="noopener noreferrer" target="_blank">East China Normal University (ECNU)</a> in 2025 (advised by Prof. <a href="https://faculty.ecnu.edu.cn/_s37/zz2/main.psp" target="_blank" rel="noopener noreferrer">Zhao Zhang</a> and Prof. <a href="https://faculty.ecnu.edu.cn/_s37/jcq/main.psp" target="_blank" rel="noopener noreferrer">Cheqing Jin</a>). 
+<p>I received my Ph.D. in Data Science and Engineering from <a href="https://english.ecnu.edu.cn/" rel="noopener noreferrer" target="_blank">East China Normal University (ECNU)</a> in 2025 (advised by Prof. <a href="https://faculty.ecnu.edu.cn/_s37/zz2/main.psp" target="_blank" rel="noopener noreferrer">Zhao Zhang</a> and Prof. <a href="https://faculty.ecnu.edu.cn/_s37/jcq/main.psp" target="_blank" rel="noopener noreferrer">Cheqing Jin</a>).</p>
 
 <!-- Prior to that, I obtained my master's degree in Computer Technology from Guilin University of Electronic Technology in 2020 and my bachelor's degree in Network Engineering from Huai'an University in 2017.</p> -->
 
