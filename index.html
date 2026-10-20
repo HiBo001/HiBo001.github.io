@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Haibo Tang — Postdoctoral Researcher at Zhejiang University. Research in blockchain systems and distributed databases." name="description"/>
+<title>About Me - Haibo Tang</title>
+<!--
+    Academic homepage for Haibo Tang.
+    The visual language and HTML class names follow the AcademicPages / Minimal Mistakes
+    Jekyll theme used by https://lroethan.github.io/ (MIT-licensed theme).
+    Standalone theme-matched CSS is embedded below so this HTML works offline.
+    No dependency on the reference website is required.
+    Replace the HT monogram in the author__avatar with a personal portrait if desired.
+  -->
+<style>
+    /* Standalone styling based on the reference's AcademicPages theme. */
+    :root {
+      --global-base-color:#2f7f93;
+      --global-bg-color:#fff;
+      --global-footer-bg-color:#f2f3f3;
+      --global-border-color:#f2f3f3;
+      --global-dark-border-color:#bdc1c4;
+      --global-link-color:#52adc8;
+      --global-link-color-hover:#236075;
+      --global-masthead-link-color:#494e52;
+      --global-masthead-link-color-hover:#5b6266;
+      --global-text-color:#494e52;
+      --global-text-color-light:#bdc1c4;
+    }
+    *,*::before,*::after {box-sizing:border-box}
+    html{background-color:var(--global-bg-color);font-size:16px;scroll-behavior:smooth;scroll-padding-top:30px;-webkit-text-size-adjust:100%}
+    body{margin:0;padding:0 0 9em;background:var(--global-bg-color);color:var(--global-text-color);font-family:"Trebuchet MS",Helvetica,sans-serif;line-height:1.5}
+    a{color:var(--global-link-color);text-decoration:none}
+    a:hover{color:var(--global-link-color-hover)}
+    img{max-width:100%;height:auto;vertical-align:middle;border:0}
+    p{margin:0 0 1.3em}
+    ul li,ol li{margin-bottom:.5em}
+    h1,h2,h3,h4{margin:2em 0 .5em;line-height:1.2;font-family:"Trebuchet MS",Helvetica,sans-serif;font-weight:700}
+    h1{font-size:1.563em;margin-top:0}
+    h2{font-size:1.25em}
+    h3{font-size:1em}
+    :focus-visible{outline:2px solid var(--global-base-color);outline-offset:3px}
+
+    #main{max-width:1280px;margin:2em auto 0;padding:0 1em;display:flex;gap:0;align-items:flex-start;min-height:calc(100vh - 240px)}
+    .sidebar{position:sticky;top:28px;flex:0 0 16.67%;width:16.67%;max-width:250px;margin-bottom:1em;align-self:flex-start}
+    .sidebar h2,.sidebar h3,.sidebar h4{margin-bottom:0;font-family:"Trebuchet MS",Helvetica,sans-serif}
+    .sidebar p,.sidebar li{font-family:"Trebuchet MS",Helvetica,sans-serif;font-size:.75em;line-height:1.5}
+    .author__avatar{display:block;width:auto;max-width:175px;height:auto}
+    .author__avatar img{width:100%;max-width:175px;border-radius:50%;padding:5px;border:1px solid var(--global-border-color)}
+    .portrait-placeholder{display:grid;place-items:center;width:175px;height:175px;max-width:100%;border-radius:50%;border:1px solid var(--global-border-color);background:#e6ebed;color:#798990;box-shadow:inset 0 0 0 5px #fff;font:700 42px "Trebuchet MS",Helvetica,sans-serif;letter-spacing:-.03em}
+    .author__content{display:block;width:100%;line-height:1;padding:0}
+    .sidebar .author__name{font-size:1em;margin:10px 0;font-weight:700}
+    .author__bio{margin:10px 0 20px}
+    .author__urls-wrapper{position:relative;display:block;font-family:"Trebuchet MS",Helvetica,sans-serif}
+    .author__urls{position:relative;display:block;margin:0;padding:0;list-style-type:none}
+    .author__urls li{margin-bottom:0;white-space:normal;color:#737e84}
+    .author__urls a{display:block;margin-bottom:5px;padding:2px 5px 2px 0;color:inherit;font-size:1em;text-decoration:none}
+    .author__urls a:hover{text-decoration:underline;color:var(--global-link-color-hover)}
+    .author__urls .symbol{display:inline-block;width:1.55em;color:#737e84;font-style:normal}
+    .follow-toggle{display:none;font-family:inherit;font-size:13px;background:#fff;border:1px solid #ddd;border-radius:4px;color:#494e52;padding:.45em .8em;cursor:pointer}
+    .page{min-width:0;flex:1;margin-left:0;padding:0 16.65% 0 4.15%}
+    .page__inner-wrap{width:100%}
+    .page__title{margin-top:0;line-height:1;font-size:1.563em}
+    .page__content h2{margin-top:1.35em;margin-bottom:.45em;padding-bottom:0;border-bottom:0}
+    .page__content p{margin:0 0 1.3em}
+    .page__content a{text-decoration:underline}
+    .page__content a:hover{text-decoration:underline}
+    .page__content ul{margin-top:0;margin-bottom:1.6em;padding-left:2em}
+    .page__content li{font-size:1em;line-height:1.5;overflow-wrap:break-word}
+    .page__content blockquote{margin: .5em 1em 1em 0;padding:0 1em;font-style:italic;border-left:.25em solid var(--global-border-color)}
+    .page__content blockquote p{margin:0 0 1em}
+    .page__content sup{font-size:75%;line-height:0;vertical-align:super}
+    .page__content section{scroll-margin-top:30px}
+    .page__content strong{font-weight:700}
+    .page__footer{position:fixed;bottom:0;left:0;width:100%;border-top:1px solid var(--global-dark-border-color);background:var(--global-footer-bg-color);color:#8b9599;z-index:15}
+    .page__footer footer{max-width:1280px;margin:1em auto 0;padding:0 1em 1em}
+    .page__footer-copyright{font-size:.6875em}
+    .page__footer-copyright a{color:inherit;text-decoration:none}
+    .page__footer-copyright a:hover{text-decoration:underline}
+    @media (min-width:768px){html{font-size:18px}}
+    @media (max-width:1023px){
+      #main{display:block;margin-top:1.5em}
+      .sidebar{position:relative;top:auto;width:100%;max-width:none;display:flex;gap:0;margin:0 0 1.7em}
+      .author__avatar{display:table-cell;flex:0 0 70px;align-self:flex-start}
+      .portrait-placeholder{width:68px;height:68px;font-size:22px;box-shadow:inset 0 0 0 3px #fff}
+      .author__content{display:table-cell;flex:1;padding-left:15px;padding-right:15px}
+      .sidebar .author__name{margin:0 0 7px}
+      .author__bio{margin:0;line-height:1.5}
+      .author__urls-wrapper{display:table-cell;align-self:center;margin-left:auto;flex:0 0 auto}
+      .follow-toggle{display:inline-block}
+      .author__urls{display:none;position:absolute;top:100%;right:0;width:max-content;max-width:300px;margin-top:10px;padding:10px;border:1px solid var(--global-border-color);border-radius:4px;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.16);z-index:25}
+      .author__urls.show{display:block}
+      .page{width:100%;padding:0 7%}
+    }
+    @media(max-width:610px){
+
+      
+
+
+
+      #main{padding:0 1.1em}
+      .page{padding:0}
+      .page__title{font-size:1.563em}
+      .author__avatar{flex-basis:58px}
+      .portrait-placeholder{width:55px;height:55px;font-size:18px}
+      .author__content{padding-left:10px;padding-right:7px}
+      .sidebar .author__name{font-size:15.5px}
+      .sidebar .author__bio{font-size:11.7px;line-height:1.4}
+      .page__footer footer{margin-top:.5em;padding-bottom:.6em}
+      .page__content ul{padding-left:1.6em}
+    }
+    @media print {.page__footer,.follow-toggle{display:none!important}body{padding:0}#main{max-width:none}.sidebar{position:static}.page{padding:0 0 0 1em}}
+  
+    /* Hanging indentation keeps the two complete affiliations readable in the sidebar. */
+    .author__urls .author__affiliation{display:flex;align-items:flex-start;gap:0;margin:6px 0;line-height:1.35}
+    .author__urls .author__affiliation .symbol{flex:0 0 1.55em;width:1.55em}
+    .author__urls .affiliation-label{flex:1;min-width:0;overflow-wrap:break-word}
+    .author__urls .contact-email{overflow-wrap:anywhere}
+</style>
+<style>
+    /* A deliberate source-compatible custom avatar; the reference's avatar is a photograph. */
+    .portrait-placeholder{display:grid;place-items:center;width:175px;height:175px;max-width:100%;border-radius:50%;border:1px solid var(--global-border-color,#f2f3f3);background:#e6ebed;color:#798990;box-shadow:inset 0 0 0 5px #fff;font:700 42px "Trebuchet MS",Helvetica,sans-serif;letter-spacing:-.03em}
+    @media(max-width:1023px){.portrait-placeholder{width:68px;height:68px;font-size:22px;box-shadow:inset 0 0 0 3px #fff}}
+    @media(max-width:610px){.portrait-placeholder{width:55px;height:55px;font-size:18px}}
+  </style>
+</head>
+<body>
+
+<div id="main" role="main">
+<div aria-label="Profile sidebar" class="sidebar sticky">
+<div itemscope="" itemtype="https://schema.org/Person">
+<div aria-label="Avatar placeholder: add your portrait here" class="author__avatar">
+<!-- To use your portrait: replace the div below with <img src="portrait.jpg" alt="Haibo Tang"> -->
+<div aria-hidden="true" class="portrait-placeholder">HT</div>
+</div>
+<div class="author__content">
+<h3 class="author__name">Haibo Tang</h3>
+<p class="author__bio">Postdoctoral Researcher<br/>Blockchain &amp; Distributed Systems</p>
+</div>
+<div class="author__urls-wrapper">
+<button aria-controls="author-urls" aria-expanded="false" class="follow-toggle btn btn--inverse" id="follow-toggle" type="button">Follow</button>
+<ul class="author__urls social-icons" id="author-urls">
+<li class="author__desktop"><span aria-hidden="true" class="symbol">⌖</span>Hangzhou, China</li>
+<li class="author__desktop author__affiliation"><span aria-hidden="true" class="symbol">⌂</span><span class="affiliation-label">State Key Laboratory of Blockchain and Data Security, Zhejiang University</span></li><li class="author__desktop author__affiliation"><span aria-hidden="true" class="symbol">⌂</span><span class="affiliation-label">Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security</span></li>
+<li><a href="mailto:hbtang001@163.com"><span aria-hidden="true" class="symbol">✉</span><span class="contact-email">hbtang001@163.com</span></a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<article aria-label="Haibo Tang academic homepage" class="page" id="top">
+<div class="page__inner-wrap">
+<header><h1 class="page__title">About Me</h1></header>
+<section aria-label="Biography and academic record" class="page__content">
+<p>I am currently a postdoctoral researcher at the <a href="https://www.zju.edu.cn/english/" rel="noopener noreferrer" target="_blank">State Key Laboratory of Blockchain and Data Security, Zhejiang University</a>, and the Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security in Hangzhou, China.</p>
+<p>I received my Ph.D. in Data Science and Engineering from <a href="https://english.ecnu.edu.cn/" rel="noopener noreferrer" target="_blank">East China Normal University (ECNU)</a> in 2025 (advised by Prof. <a href="https://faculty.ecnu.edu.cn/_s37/zz2/main.psp" target="_blank" rel="noopener noreferrer">Zhao Zhang</a> and Prof. <a href="https://faculty.ecnu.edu.cn/_s37/jcq/main.psp" target="_blank" rel="noopener noreferrer">Cheqing Jin</a>). 
+
+<!-- Prior to that, I obtained my master's degree in Computer Technology from Guilin University of Electronic Technology in 2020 and my bachelor's degree in Network Engineering from Huai'an University in 2017.</p> -->
+
+<p>My research interests mainly lie in <strong>blockchain systems, distributed systems, and high-performance transaction processing</strong>. I am also interested in verifiable computation and trustworthy multi-agent collaboration.</p>
+<h2 id="news">News</h2>
+<ul>
+<li><strong>2026:</strong> Our paper <em>MIEX</em> was accepted by <strong>PVLDB 2027</strong>.</li>
+<li><strong>2026:</strong> Our survey on zkVM was accepted <strong>ACM AsiaCCS 2026</strong>.</li>
+<li><strong>2025:</strong> Our paper <em>Loom</em> was accepted <strong>IEEE ICDE 2025</strong>.</li>
+<li><strong>2024:</strong> Our paper on hierarchical blockchain sharding was accepted by <strong>Euro-Par 2024</strong>.</li>
+</ul>
+<h2 id="selected-publications">Selected Publications</h2>
+<blockquote><p>My name is highlighted in <strong>bold</strong>.</p></blockquote>
+<ul>
+<li><strong>Haibo Tang</strong>, Enping Wu, Cunyang Liu, Yunbo Yang, Hao Duan, Xin Xia, Lingfeng Bao. MIEX: A Scalable and High-Performance Execution Framework for Blockchain Systems under Mixed Workloads. <em>Proceedings of the VLDB Endowment (PVLDB)</em>, 2027.</li>
+<li><strong>Haibo Tang</strong>, Huan Zhang, Zhenyu Zhang, Zhao Zhang, Cheqing Jin, Aoying Zhou. Towards High-Performance Transactions via Hierarchical Blockchain Sharding. <em>International European Conference on Parallel and Distributed Computing (Euro-Par)</em>, 2024.</li>
+<li><strong>Haibo Tang</strong>, Huan Zhang, Zhao Zhang, Cheqing Jin, Aoying Zhou. 区块链分片技术研究进展 (A Survey of Blockchain Sharding). <em>Journal of Software (软件学报)</em>, 2025.</li>
+<li>Yunbo Yang, Yuejia Cheng, <strong>Haibo Tang</strong>, Guomin Yang, Bingsheng Zhang, Kui Ren. SoK: Understanding zkVM: From Research to Practice. <em>ACM Asia Conference on Computer and Communications Security (AsiaCCS)</em>, 2026.</li>
+<li>Huan Zhang, Xiaodong Qi, <strong>Haibo Tang</strong>, Zhao Zhang, Cheqing Jin, Aoying Zhou. Loom: A Deterministic Execution Framework Towards Nested Contract Transactions. <em>IEEE International Conference on Data Engineering (ICDE)</em>, 2025.</li>
+<li>Yuming Lin, <strong>Haibo Tang</strong>, You Li, Chuangxin Fang, Zejun Xu, Ya Zhou, Aoying Zhou. Generating Clusters of Similar Sizes by Constrained Balanced Clustering. <em>Applied Intelligence</em>, 2022.</li>
+<li>Xing Tong, <strong>Haibo Tang</strong>, Nan Jiang, Wei Fan, Yichen Gao, Sijia Deng, Zhao Zhang, Cheqing Jin, Yingjie Yang, Gang Qin. SQL-Middleware: Enabling the Blockchain with SQL. <em>International Conference on Database Systems for Advanced Applications (DASFAA)</em>, 2021. </li>
+<li>Taoyi Huang, Yuming Lin, <strong>Haibo Tang</strong>, You Li, Huibing Zhang. PKRS: A Product Knowledge Retrieve System. <em>APWeb-WAIM</em>, 2019.</li>
+</ul>
+</section>
+</div>
+</article>
+</div>
+<div class="page__footer"><footer>
+<div class="page__footer-copyright">© 2026 Haibo Tang. Layout adapted from <a href="https://github.com/academicpages/academicpages.github.io" rel="noopener noreferrer" target="_blank">AcademicPages</a> / <a href="https://github.com/mmistakes/minimal-mistakes" rel="noopener noreferrer" target="_blank">Minimal Mistakes</a>. Updated October 2026.</div>
+</footer></div>
+<script>
+    (function(){
+      var follow = document.getElementById('follow-toggle');
+      var links = document.getElementById('author-urls');
+      if(!follow || !links) return;
+      follow.addEventListener('click',function(){
+        var isOpen=links.classList.toggle('show');
+        follow.setAttribute('aria-expanded',String(isOpen));
+      });
+      document.addEventListener('click',function(ev){
+        if(!follow.contains(ev.target) && !links.contains(ev.target)){
+          links.classList.remove('show');follow.setAttribute('aria-expanded','false');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
